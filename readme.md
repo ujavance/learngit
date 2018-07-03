@@ -8,4 +8,9 @@ Github 学习笔记
 4. 掌握仓库当前的状态
     - 要随时掌握工作区的状态，使用git status命令。
     - 如果git status告诉你有文件被修改过，用git diff可以查看修改内容。
-5. end
+5. 历史之间穿梭
+    1. `HEAD` 指当前版本,上一版本是 `HEAD^`，上上版本是 `HEAD^^`,往上100个版本 `100个^`
+    2. `git reset --hard commit_id` 恢复到指定版本
+    3. `git log` 查看**提交历史**，确定要回退的版本
+    4. `git reflog` 查看命令历史,确定要回到未来的哪个版本
+6. end
