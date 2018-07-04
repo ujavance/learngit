@@ -13,4 +13,31 @@ Github 学习笔记
     2. `git reset --hard commit_id` 恢复到指定版本
     3. `git log` 查看**提交历史**，确定要回退的版本
     4. `git reflog` 查看命令历史,确定要回到未来的哪个版本
-6. end
+6. `ssh-keygen -t rsa -C "youremail@qq.com"` 获得一个秘钥，只有指定秘钥的客户端才可以提交
+7. `git remote add origin git@github.com:ujavance/learngit.git` 关联远端的仓库
+8. Github 创建一个Response后，给的提示
+    1. 关联本地的一个仓库.[代码](#relativelocalcode)
+    2. 从这个仓库克隆出新的仓库 [代码](#createnewcode)
+    3. 从另一个存储库导入代码
+    4. #
+
+9.  end
+
+
+<a id="relativelocalcode"></a>
+或从命令行推送现有存储库
+```cmd
+git remote add origin git@github.com:ujavance/learngit.git
+git push -u origin master
+```
+
+<a id="createnewcode"></a>
+在命令行上创建一个新的存储库
+```cmd
+echo "# learngit" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:ujavance/learngit.git
+git push -u origin master
+```
