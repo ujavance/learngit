@@ -3,11 +3,12 @@ Github 学习笔记
 1. 初始化一个Git仓库，使用 `git init`命令。
 2. 添加文件到Git仓库，分两步：
     - 使用命令 `git add <file>`，注意，可反复多次使用，添加多个文件；
-    - 使用命令 `git commit -m <message>` ，完成。
-3. 一定要放到learngit目录下（子目录也行），因为这是一个Git仓库，放到其他地方Git找不到这个文件。
+    - 使用命令 `git commit -m "<message>"`，完成。
+    - 将本地库提交到远端 `git push -u origin master`
+3. 一定要放到 **learngit** 目录下（子目录也行），因为这是一个Git仓库，放到其他地方Git找不到这个文件，因为初始化的是 **learnGit** 文件
 4. 掌握仓库当前的状态
-    - 要随时掌握工作区的状态，使用`git status`命令。
-    - 如果git status告诉你有文件被修改过，用 `git diff`可以查看修改内容。
+    - 要随时掌握工作区的状态，使用 `git status` 命令。
+    - 如果git status告诉你有文件被修改过，用 `git diff` 可以查看修改内容。
 5. 历史之间穿梭
     1. `HEAD` 指当前版本,上一版本是 `HEAD^`，上上版本是 `HEAD^^`,往上100个版本 `100个^`
     2. `git reset --hard commit_id` 恢复到指定版本
