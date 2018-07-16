@@ -8,7 +8,7 @@
 1. [60Logo](http://www.60logo.com/)
 1. [NiceTool](http://www.nicetool.net/)
 
-
+<a target="_blank" href="http://www.nicetool.net/">NiceTool</a>
 
 处理日常生活优先级（结构性拖延） - 与是否拖延
 
